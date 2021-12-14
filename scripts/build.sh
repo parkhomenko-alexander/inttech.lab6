@@ -2,4 +2,5 @@ cd ..
 env
 git pull origin master
 source .env/bin/activate
-pip list
+pip install -r requirements.txt
+deactivate
