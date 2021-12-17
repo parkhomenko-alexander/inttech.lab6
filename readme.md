@@ -1,4 +1,4 @@
-# Лабораторная 6
+# Лабораторная 6-adaфыфвыфывasdaasdadsqeasdasdasdasdaasdasdasdas
 ![](img/1.PNG)
 
 ![](img/2.PNG)
