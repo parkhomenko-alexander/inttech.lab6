@@ -7,7 +7,4 @@ class ApplicationContainer(containers.DeclarativeContainer):
 
     config = providers.Configuration()
 
-    service = providers.Singleton(
-        Service,
-        env=config.env
-    )
+    service = providers.Singleton(Service, env=config.env)
