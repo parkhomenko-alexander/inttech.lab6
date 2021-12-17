@@ -1,0 +1,15 @@
+#!../../env/Scripts/python.exe
+
+
+import re
+import sys
+
+
+regex = r'^\[[0-9]+\][а-яА-я]+'
+msg = ''
+with open(sys.argv[1], 'r') as os:
+    msg = os.read()
+
+if not re.match(regex, msg):
+    print('Commit message pattern is: [Task number]Description')
+    sys.exit(-1)
