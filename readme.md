@@ -1,4 +1,4 @@
-# Лабораторная 6-7aaaaaaaaaaaaaaaa
+# Лабораторная 6-7aaaaaaaaaaaaaaaaa
 
 ![](img/1.PNG)
 
