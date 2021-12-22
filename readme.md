@@ -1,4 +1,4 @@
-[![build status](https://github.com/parkhomenko-alexander/inttech.lab6-7-8/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/parkhomenko-alexander/inttech.lab6-7-8/actions/workflows/ci-cd.yml)
+[![build status](https://github.com/parkhomenko-alexander/inttech.lab6-7-8/actions/workflows/ci-cd.yml/badge.svg?branch=master)](https://github.com/parkhomenko-alexander/inttech.lab6-7-8/actions/workflows/ci-cd.yml)
 
 # Лабораторная 6
 ![](img/1.PNG)
