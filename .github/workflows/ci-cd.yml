@@ -19,7 +19,7 @@ jobs:
         python-version: "3.9"
     - name: Install dependencies
       run: |
-        pip venv .env
+        python3 -m venv .env
         ls .env
         ls .env/
         # pip install --upgrade pip
