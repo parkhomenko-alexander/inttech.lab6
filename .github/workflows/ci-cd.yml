@@ -26,5 +26,6 @@ jobs:
         pip list
     - name: Testing
       run: |
+        source .env/bin/activate
         pip list
         pytest tests.py
