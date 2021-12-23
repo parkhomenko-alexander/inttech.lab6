@@ -6,3 +6,5 @@ container = ApplicationContainer()
 container.config.from_yaml('config.yml')
 
 app = Flask(__name__)
+
+client = app.test_client()
