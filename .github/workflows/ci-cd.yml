@@ -31,4 +31,4 @@ jobs:
     - name: Testing
       run: |
         source .env/bin/activate
-        pytest tests.py --exit-zero
+        pytest --exit-zero tests.py 
