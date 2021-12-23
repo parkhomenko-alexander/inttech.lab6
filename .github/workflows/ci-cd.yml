@@ -27,8 +27,8 @@ jobs:
     - name: Use pylint
       run: |
         source .env/bin/activate
-        find . -maxdepth 1 -name "*.py" | xargs pylint
+        find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
     - name: Testing
       run: |
         source .env/bin/activate
-        pytest --exit-zero tests.py 
+        pytest tests.py 
