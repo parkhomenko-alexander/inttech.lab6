@@ -24,8 +24,11 @@ jobs:
         pip install --upgrade pip
         pip install -r requirements.txt
         pip list
+    - name: Use pylint
+      run: |
+        source .env/bin/activate
+        find . -maxdepth 1 -name "*.py" | xargs pylint
     - name: Testing
       run: |
         source .env/bin/activate
-        pip list
         pytest tests.py

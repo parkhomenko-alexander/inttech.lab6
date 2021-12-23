@@ -1,5 +1,6 @@
+''' app module '''
+
 from flask import Flask
-from dependency_injector import containers
 from containers import ApplicationContainer
 
 container = ApplicationContainer()

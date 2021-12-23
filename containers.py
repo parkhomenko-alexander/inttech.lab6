@@ -1,3 +1,5 @@
+"""Application container."""
+
 from dependency_injector import containers, providers
 from service import Service
 
