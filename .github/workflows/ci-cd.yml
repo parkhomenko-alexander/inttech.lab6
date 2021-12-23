@@ -17,6 +17,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: "3.9"
+
     - name: Build
       run: |
         python3 -m venv .env
@@ -24,10 +25,12 @@ jobs:
         pip install --upgrade pip
         pip install -r requirements.txt
         pip list
+
     - name: Use pylint
       run: |
         source .env/bin/activate
         find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
+
     - name: Testing
       run: |
         source .env/bin/activate
