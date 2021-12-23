@@ -1,4 +1,4 @@
-''' app module '''
+""" app module """
 
 from flask import Flask
 from containers import ApplicationContainer
