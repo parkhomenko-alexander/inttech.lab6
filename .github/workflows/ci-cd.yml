@@ -19,9 +19,10 @@ jobs:
         python-version: "3.9"
     - name: Install dependencies
       run: |
+        $VIRTUAL_ENV
         python3 -m venv .env
         source .env/bin/activate
-        where python
+        $VIRTUAL_ENV
         pip install --upgrade pip
         pip install -r requirements.txt
         ls -la
