@@ -19,6 +19,9 @@ jobs:
         python-version: "3.9"
     - name: Install dependencies
       run: |
-        pip install --upgrade pip
-        pip install -r requirements.txt
+        pip venv .env
+        ls .env
+        ls .env/
+        # pip install --upgrade pip
+        # pip install -r requirements.txt
         ls -la
