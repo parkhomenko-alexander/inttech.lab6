@@ -3,8 +3,7 @@ from dependency_injector import containers
 from containers import ApplicationContainer
 
 container = ApplicationContainer()
-container.config.from_yaml('config.yml')
+container.config.from_yaml("config.yml")
 
 app = Flask(__name__)
-
 client = app.test_client()
