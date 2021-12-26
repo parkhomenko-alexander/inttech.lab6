@@ -1,4 +1,5 @@
 git add -A
+which pip
 cd ..
 pip freeze > requirements.txt
 git commit -m "[25]cicd-upgrade"
