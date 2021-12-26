@@ -40,7 +40,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: build-and-testing
     steps:
-    - name: nope
+    - name: deploy staging
+      uses: appleboy/ssh-action@v0.1.3
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.SSH_USER}}
+        key: ${{ secrets.DO_KEY }}
       run: |
         ls -la
 
