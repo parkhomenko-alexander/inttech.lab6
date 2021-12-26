@@ -27,6 +27,7 @@ jobs:
 
     - name: Use pylint
       run: |
+        cat requirements.txt
         ls -la 
         pwd
         cd ../
