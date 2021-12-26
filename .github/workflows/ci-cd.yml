@@ -30,6 +30,7 @@ jobs:
       run: |
         source .env/bin/activate
         which pip
+        pylint -h
         ls -la
         find . -maxdepth 1 -name "*.py"
         find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
