@@ -50,6 +50,9 @@ jobs:
         script: |
           cd ${{ secrets.SDIR}}
           git pull origin master
+          source .env/bin/activate
+          pip install -r requirements.txt
+
 
   deploy-prod:
     runs-on: ubuntu-latest
@@ -65,5 +68,7 @@ jobs:
         script: |
           cd ${{ secrets.PDIR}}
           git pull origin master
+          source .env/bin/activate
+          pip install -r requirements.txt
 
   
