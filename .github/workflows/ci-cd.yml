@@ -47,7 +47,7 @@ jobs:
         username: ${{ secrets.SSH_USER}}
         key: ${{ secrets.DO_KEY }}
     - name: ttttt
-      script: |
+      run: |
         ls -la
 
 
