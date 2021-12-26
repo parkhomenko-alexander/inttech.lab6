@@ -35,5 +35,5 @@ jobs:
     - name: Testing
       run: |
         source .env/bin/activate
-        ls
+        ls -la
         pytest tests.py 
