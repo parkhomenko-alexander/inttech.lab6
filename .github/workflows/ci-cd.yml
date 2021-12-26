@@ -48,7 +48,22 @@ jobs:
         key: ${{ secrets.DO_KEY }}
         
         script: |
-          cd dev
+          cd ${{ secrets.SDIR}}
+          git pull origin master
+
+    deploy-prod:
+    runs-on: ubuntu-latest
+    needs: deploy-staging
+    steps:
+    - name: deploy prod
+      uses: appleboy/ssh-action@v0.1.3
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.SSH_USER}}
+        key: ${{ secrets.DO_KEY }}
+        
+        script: |
+          cd ${{ secrets.PDIR}}
           git pull origin master
 
   
