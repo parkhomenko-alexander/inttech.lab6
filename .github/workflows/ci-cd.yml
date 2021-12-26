@@ -46,8 +46,8 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.SSH_USER}}
         key: ${{ secrets.DO_KEY }}
-    - name: tttt
-      run: |
+    - name: ttttt
+      script: |
         ls -la
 
 
