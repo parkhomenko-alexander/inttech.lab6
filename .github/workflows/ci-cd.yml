@@ -46,12 +46,9 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.SSH_USER}}
         key: ${{ secrets.DO_KEY }}
-
-    - name: deploy staginaasdg
-      # script: |
-      #   ls -la
-      run: |
-        ls -la
-
+        
+        script: |
+          cd dev
+          git pull origin master
 
   
