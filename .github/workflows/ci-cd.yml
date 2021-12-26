@@ -27,12 +27,6 @@ jobs:
 
     - name: Use pylint
       run: |
-        cat requirements.txt
-        ls -la 
-        pwd
-        cd ../
-        ls-la
-        source .env/bin/activate
         find . -maxdepth 1 -name "*.py"
         find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
 
