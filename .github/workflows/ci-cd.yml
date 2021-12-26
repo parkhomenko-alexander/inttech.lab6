@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
+
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
@@ -30,6 +30,7 @@ jobs:
       run: |
         source .env/bin/activate
         find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
+
 
     - name: Testing
       run: |
