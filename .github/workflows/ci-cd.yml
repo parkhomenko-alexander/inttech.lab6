@@ -32,7 +32,7 @@ jobs:
         find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
 
     - name: Testing
-      script: |
+      run: |
         source .env/bin/activate
         pytest tests.py
 
