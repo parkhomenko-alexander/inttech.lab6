@@ -29,8 +29,9 @@ jobs:
       run: |
         ls -la 
         pwd
+        cd ../
+        ls-la
         source .env/bin/activate
-        pip list
         find . -maxdepth 1 -name "*.py"
         find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
 
