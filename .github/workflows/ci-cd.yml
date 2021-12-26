@@ -27,6 +27,7 @@ jobs:
 
     - name: Use pylint
       run: |
+        pip list
         find . -maxdepth 1 -name "*.py"
         find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
 
