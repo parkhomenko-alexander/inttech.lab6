@@ -38,7 +38,7 @@ jobs:
 
   deploy-staging:
     runs-on: ubuntu-latest
-    needs: [build-and-testing]
+    needs: build-and-testing
     steps:
       - name: nope
       run: |
