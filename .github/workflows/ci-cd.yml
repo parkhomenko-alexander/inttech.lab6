@@ -47,11 +47,11 @@ jobs:
         username: ${{ secrets.SSH_USER}}
         key: ${{ secrets.DO_KEY }}
 
-      - name: deploy staging
-        # script: |
-        #   ls -la
-        run: |
-        ls -la
+    - name: deploy staging
+      # script: |
+      #   ls -la
+      run: |
+      ls -la
 
 
   
