@@ -1,5 +1,5 @@
 git add -A
-which pip
+source ../env/Scripts/activate
 cd ..
 pip freeze > requirements.txt
 git commit -m "[25]cicd-upgrade"
