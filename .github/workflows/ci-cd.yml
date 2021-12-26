@@ -31,8 +31,18 @@ jobs:
         source .env/bin/activate
         find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
 
-
     - name: Testing
       run: |
         source .env/bin/activate
-        pytest tests.py 
+        pytest tests.py
+
+  deploy-staging:
+    runs-on: ubuntu-latest
+    needs: [build-and-testing]
+    steps:
+      - name: nope
+      run: |
+        ls -la
+
+
+  
