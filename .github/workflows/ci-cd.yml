@@ -29,11 +29,11 @@ jobs:
     - name: Use pylint
       run: |
         source .env/bin/activate
+          ls -la
         find . -maxdepth 1 -name "*.py" | xargs pylint --exit-zero
 
 
     - name: Testing
       run: |
         source .env/bin/activate
-        ls -la
         pytest tests.py 
