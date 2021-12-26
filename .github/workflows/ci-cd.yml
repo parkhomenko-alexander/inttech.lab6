@@ -46,8 +46,11 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.SSH_USER}}
         key: ${{ secrets.DO_KEY }}
-    
-        script: |
+
+        - name: deploy staging
+          # script: |
+          #   ls -la
+          run: |
           ls -la
 
 
