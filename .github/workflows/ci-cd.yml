@@ -49,9 +49,7 @@ jobs:
         
         script: |
           cd ${{ secrets.SDIR}}
-          git pull origin master
-          source .env/bin/activate
-          pip install -r requirements.txt
+          source ${{ secrets.SN}}
 
 
   deploy-prod:
@@ -66,7 +64,5 @@ jobs:
         key: ${{ secrets.DO_KEY }}
         
         script: |
-          cd ${{ secrets.PDIR}}
-          git pull origin master
-          source .env/bin/activate
-          pip install -r requirements.txt
+          cd ${{ secrets.SDIR}}
+          source ${{ secrets.SN}}
